@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E9B4651226E773600F99576 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B4650226E773600F99576 /* PodFile */; };
 		4EC12E98226D255100E6E7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12E97226D255100E6E7A4 /* AppDelegate.swift */; };
 		4EC12E9A226D255100E6E7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12E99226D255100E6E7A4 /* ViewController.swift */; };
 		4EC12E9D226D255100E6E7A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC12E9B226D255100E6E7A4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		4EC12EAD226D255300E6E7A4 /* NerdyOrWalkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12EAC226D255300E6E7A4 /* NerdyOrWalkyTests.swift */; };
 		4EC12EB8226D255300E6E7A4 /* NerdyOrWalkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12EB7226D255300E6E7A4 /* NerdyOrWalkyUITests.swift */; };
 		4EC12EC6226D2C0500E6E7A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12EC5226D2C0500E6E7A4 /* MapViewController.swift */; };
+		5970B517886E9AECA6715FD8 /* libPods-NerdyOrWalky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C4B016A9932408BC706223 /* libPods-NerdyOrWalky.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0938A4BFBF96184BB2D80D22 /* Pods-NerdyOrWalky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NerdyOrWalky.release.xcconfig"; path = "Target Support Files/Pods-NerdyOrWalky/Pods-NerdyOrWalky.release.xcconfig"; sourceTree = "<group>"; };
+		4E9B4650226E773600F99576 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		4EC12E94226D255100E6E7A4 /* NerdyOrWalky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NerdyOrWalky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC12E97226D255100E6E7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EC12E99226D255100E6E7A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		4EC12EB7226D255300E6E7A4 /* NerdyOrWalkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdyOrWalkyUITests.swift; sourceTree = "<group>"; };
 		4EC12EB9226D255300E6E7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC12EC5226D2C0500E6E7A4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D21A566FE3D2E850C0441A0D /* Pods-NerdyOrWalky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NerdyOrWalky.debug.xcconfig"; path = "Target Support Files/Pods-NerdyOrWalky/Pods-NerdyOrWalky.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C4B016A9932408BC706223 /* libPods-NerdyOrWalky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NerdyOrWalky.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5970B517886E9AECA6715FD8 /* libPods-NerdyOrWalky.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +86,13 @@
 		4EC12E8B226D255100E6E7A4 = {
 			isa = PBXGroup;
 			children = (
+				4E9B4650226E773600F99576 /* PodFile */,
 				4EC12E96226D255100E6E7A4 /* NerdyOrWalky */,
 				4EC12EAB226D255300E6E7A4 /* NerdyOrWalkyTests */,
 				4EC12EB6226D255300E6E7A4 /* NerdyOrWalkyUITests */,
 				4EC12E95226D255100E6E7A4 /* Products */,
+				A74EA8B138191D924068F431 /* Pods */,
+				903F7DD8F5F62CF0FCE88029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +138,24 @@
 			path = NerdyOrWalkyUITests;
 			sourceTree = "<group>";
 		};
+		903F7DD8F5F62CF0FCE88029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4B016A9932408BC706223 /* libPods-NerdyOrWalky.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A74EA8B138191D924068F431 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D21A566FE3D2E850C0441A0D /* Pods-NerdyOrWalky.debug.xcconfig */,
+				0938A4BFBF96184BB2D80D22 /* Pods-NerdyOrWalky.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EC12EBC226D255300E6E7A4 /* Build configuration list for PBXNativeTarget "NerdyOrWalky" */;
 			buildPhases = (
+				59820E196452007063FB992F /* [CP] Check Pods Manifest.lock */,
 				4EC12E90226D255100E6E7A4 /* Sources */,
 				4EC12E91226D255100E6E7A4 /* Frameworks */,
 				4EC12E92226D255100E6E7A4 /* Resources */,
+				F0B20D0923441578F4476CB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +264,7 @@
 			files = (
 				4EC12EA2226D255300E6E7A4 /* LaunchScreen.storyboard in Resources */,
 				4EC12E9F226D255300E6E7A4 /* Assets.xcassets in Resources */,
+				4E9B4651226E773600F99576 /* PodFile in Resources */,
 				4EC12E9D226D255100E6E7A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +284,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59820E196452007063FB992F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NerdyOrWalky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B20D0923441578F4476CB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NerdyOrWalky/Pods-NerdyOrWalky-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NerdyOrWalky/Pods-NerdyOrWalky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EC12E90226D255100E6E7A4 /* Sources */ = {
@@ -434,6 +514,7 @@
 		};
 		4EC12EBD226D255300E6E7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21A566FE3D2E850C0441A0D /* Pods-NerdyOrWalky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +532,7 @@
 		};
 		4EC12EBE226D255300E6E7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0938A4BFBF96184BB2D80D22 /* Pods-NerdyOrWalky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
