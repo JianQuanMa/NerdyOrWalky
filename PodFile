@@ -1,5 +1,19 @@
-source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
 target 'NerdyOrWalky' do
-pod 'GoogleMaps'
-pod 'GooglePlaces'
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NerdyOrWalky
+
+  target 'NerdyOrWalkyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NerdyOrWalkyUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

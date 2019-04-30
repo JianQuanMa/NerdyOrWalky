@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D0258A22768451003B4844 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 18D0258922768451003B4844 /* Podfile */; };
 		4E9B4651226E773600F99576 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B4650226E773600F99576 /* PodFile */; };
 		4EC12E98226D255100E6E7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12E97226D255100E6E7A4 /* AppDelegate.swift */; };
 		4EC12E9A226D255100E6E7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC12E99226D255100E6E7A4 /* ViewController.swift */; };
@@ -38,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0938A4BFBF96184BB2D80D22 /* Pods-NerdyOrWalky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NerdyOrWalky.release.xcconfig"; path = "Target Support Files/Pods-NerdyOrWalky/Pods-NerdyOrWalky.release.xcconfig"; sourceTree = "<group>"; };
-		4E9B4650226E773600F99576 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		18D0258922768451003B4844 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E9B4650226E773600F99576 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4EC12E94226D255100E6E7A4 /* NerdyOrWalky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NerdyOrWalky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC12E97226D255100E6E7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EC12E99226D255100E6E7A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		903F7DD8F5F62CF0FCE88029 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18D0258922768451003B4844 /* Podfile */,
 				F4C4B016A9932408BC706223 /* libPods-NerdyOrWalky.a */,
 			);
 			name = Frameworks;
@@ -152,7 +155,6 @@
 				D21A566FE3D2E850C0441A0D /* Pods-NerdyOrWalky.debug.xcconfig */,
 				0938A4BFBF96184BB2D80D22 /* Pods-NerdyOrWalky.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D0258A22768451003B4844 /* Podfile in Resources */,
 				4EC12EA2226D255300E6E7A4 /* LaunchScreen.storyboard in Resources */,
 				4EC12E9F226D255300E6E7A4 /* Assets.xcassets in Resources */,
 				4E9B4651226E773600F99576 /* PodFile in Resources */,

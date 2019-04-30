@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import GoogleMaps
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    private let locationManager = CLLocationManager()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("-=- app delegat egets called ")
+        GMSServices.provideAPIKey("AIzaSyDXCTV4Mv6vgN3cDQU79fXk8YbqSbk4eD0")
+        
+        requestLocation()
+        
         return true
     }
 
@@ -42,5 +49,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    // MARK: - Helpers
+    
+    private func requestLocation() {
+        print("-=- requesting location ")
+        
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("")
+        case .notDetermined:
+            locationManager.requestAlwaysAuthorization()
+      
+        case .denied:
+            print("-=-")
+            promptUserToGoToSettings()
+        case .restricted:
+            print("you are retricted" )
+        }
+    }
+    
+    private func promptUserToGoToSettings(){
+        let alertController = UIAlertController (title: "Title", message: "Go to Settings?", preferredStyle: .alert)
+        
+        let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+            
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+            
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                    print("Settings opened: \(success)") // Prints true
+                })
+            }
+        }
+        alertController.addAction(settingsAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
 
